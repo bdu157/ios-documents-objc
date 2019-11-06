@@ -24,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [_contentTextView setDelegate:self];
+    
     [self updateViews];
 }
 
@@ -40,6 +42,13 @@
     }
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+#pragma mark - UITextView delegate textViewDidChange
+- (void)textViewDidChange:(UITextView *)textView
+{
+    self.wordCountLabel.text = [NSString stringWithFormat:@"%d%@", self.contentTextView.text.dwp_wordCount, @" Words" ];
+}
+
 
 #pragma mark - Private Methods
 -(void)updateViews

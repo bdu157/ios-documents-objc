@@ -11,10 +11,12 @@
 @class DocumentController;
 @class DWPDocument;
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <UITextViewDelegate>
 
 @property (nonatomic) DocumentController *documentController;
 @property (nonatomic) DWPDocument *document;
+
+@property(nonatomic, assign) id<UITextViewDelegate> delegate;
 
 @end
 
