@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import "DocumentController.h"
 #import "DWPDocument.h"
+#import "NSString+WordCount.h"
 
 @interface DetailViewController ()
 
@@ -47,8 +48,10 @@
         self.title = @"Update Document";
         self.titleTextField.text = self.document.title;
         self.contentTextView.text = self.document.content;
+        self.wordCountLabel.text = [NSString stringWithFormat:@"%d%@", self.document.content.dwp_wordCount, @" Words"];
     } else {
         self.title = @"Create Document";
+        self.wordCountLabel.text = [NSString stringWithFormat:@"%@%@", @"0", @" Words"];
     }
 }
 
