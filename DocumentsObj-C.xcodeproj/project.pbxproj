@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		0BE50A6C2372661B00366EC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE50A6B2372661B00366EC9 /* AppDelegate.m */; };
 		0BE50A6F2372661B00366EC9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE50A6E2372661B00366EC9 /* SceneDelegate.m */; };
-		0BE50A722372661B00366EC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE50A712372661B00366EC9 /* ViewController.m */; };
+		0BE50A722372661B00366EC9 /* DocumentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE50A712372661B00366EC9 /* DocumentsTableViewController.m */; };
 		0BE50A752372661B00366EC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE50A732372661B00366EC9 /* Main.storyboard */; };
 		0BE50A772372661D00366EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE50A762372661D00366EC9 /* Assets.xcassets */; };
 		0BE50A7A2372661D00366EC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE50A782372661D00366EC9 /* LaunchScreen.storyboard */; };
 		0BE50A7D2372661D00366EC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE50A7C2372661D00366EC9 /* main.m */; };
+		0BE50A8923726DAF00366EC9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE50A8823726DAF00366EC9 /* DetailViewController.m */; };
+		0BE50A8C23726EF000366EC9 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE50A8B23726EF000366EC9 /* NSString+WordCount.m */; };
+		0BE50A902372714A00366EC9 /* DWPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE50A8F2372714A00366EC9 /* DWPDocument.m */; };
+		0BE50A9323727AC800366EC9 /* DocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE50A9223727AC800366EC9 /* DocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +26,21 @@
 		0BE50A6B2372661B00366EC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0BE50A6D2372661B00366EC9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		0BE50A6E2372661B00366EC9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		0BE50A702372661B00366EC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0BE50A712372661B00366EC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0BE50A702372661B00366EC9 /* DocumentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentsTableViewController.h; sourceTree = "<group>"; };
+		0BE50A712372661B00366EC9 /* DocumentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentsTableViewController.m; sourceTree = "<group>"; };
 		0BE50A742372661B00366EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BE50A762372661D00366EC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BE50A792372661D00366EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BE50A7B2372661D00366EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BE50A7C2372661D00366EC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0BE50A8723726DAF00366EC9 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0BE50A8823726DAF00366EC9 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		0BE50A8A23726EF000366EC9 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		0BE50A8B23726EF000366EC9 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		0BE50A8E2372714A00366EC9 /* DWPDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWPDocument.h; sourceTree = "<group>"; };
+		0BE50A8F2372714A00366EC9 /* DWPDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWPDocument.m; sourceTree = "<group>"; };
+		0BE50A9123727AC800366EC9 /* DocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentController.h; sourceTree = "<group>"; };
+		0BE50A9223727AC800366EC9 /* DocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +73,67 @@
 		0BE50A692372661B00366EC9 /* DocumentsObj-C */ = {
 			isa = PBXGroup;
 			children = (
+				0BE50A8323726B2C00366EC9 /* App Lifecycle */,
+				0BE50A8D23726EFB00366EC9 /* Model */,
+				0BE50A8623726D9100366EC9 /* View Controllers */,
+				0BE50A8523726B6700366EC9 /* Storyboard */,
+				0BE50A8423726B4500366EC9 /* Resources */,
+				0BE50A7B2372661D00366EC9 /* Info.plist */,
+			);
+			path = "DocumentsObj-C";
+			sourceTree = "<group>";
+		};
+		0BE50A8323726B2C00366EC9 /* App Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
 				0BE50A6A2372661B00366EC9 /* AppDelegate.h */,
 				0BE50A6B2372661B00366EC9 /* AppDelegate.m */,
 				0BE50A6D2372661B00366EC9 /* SceneDelegate.h */,
 				0BE50A6E2372661B00366EC9 /* SceneDelegate.m */,
-				0BE50A702372661B00366EC9 /* ViewController.h */,
-				0BE50A712372661B00366EC9 /* ViewController.m */,
-				0BE50A732372661B00366EC9 /* Main.storyboard */,
-				0BE50A762372661D00366EC9 /* Assets.xcassets */,
-				0BE50A782372661D00366EC9 /* LaunchScreen.storyboard */,
-				0BE50A7B2372661D00366EC9 /* Info.plist */,
 				0BE50A7C2372661D00366EC9 /* main.m */,
 			);
-			path = "DocumentsObj-C";
+			path = "App Lifecycle";
+			sourceTree = "<group>";
+		};
+		0BE50A8423726B4500366EC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BE50A762372661D00366EC9 /* Assets.xcassets */,
+				0BE50A782372661D00366EC9 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0BE50A8523726B6700366EC9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0BE50A732372661B00366EC9 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0BE50A8623726D9100366EC9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0BE50A702372661B00366EC9 /* DocumentsTableViewController.h */,
+				0BE50A712372661B00366EC9 /* DocumentsTableViewController.m */,
+				0BE50A8723726DAF00366EC9 /* DetailViewController.h */,
+				0BE50A8823726DAF00366EC9 /* DetailViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0BE50A8D23726EFB00366EC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BE50A8E2372714A00366EC9 /* DWPDocument.h */,
+				0BE50A8F2372714A00366EC9 /* DWPDocument.m */,
+				0BE50A9123727AC800366EC9 /* DocumentController.h */,
+				0BE50A9223727AC800366EC9 /* DocumentController.m */,
+				0BE50A8A23726EF000366EC9 /* NSString+WordCount.h */,
+				0BE50A8B23726EF000366EC9 /* NSString+WordCount.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BE50A722372661B00366EC9 /* ViewController.m in Sources */,
+				0BE50A8923726DAF00366EC9 /* DetailViewController.m in Sources */,
+				0BE50A902372714A00366EC9 /* DWPDocument.m in Sources */,
+				0BE50A9323727AC800366EC9 /* DocumentController.m in Sources */,
+				0BE50A722372661B00366EC9 /* DocumentsTableViewController.m in Sources */,
 				0BE50A6C2372661B00366EC9 /* AppDelegate.m in Sources */,
+				0BE50A8C23726EF000366EC9 /* NSString+WordCount.m in Sources */,
 				0BE50A7D2372661D00366EC9 /* main.m in Sources */,
 				0BE50A6F2372661B00366EC9 /* SceneDelegate.m in Sources */,
 			);

@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@class DocumentController;
+@class DWPDocument;
 
 @interface DetailViewController : UIViewController
 
+@property (nonatomic) DocumentController *documentController;
+@property (nonatomic) DWPDocument *document;
+
 @end
 
-NS_ASSUME_NONNULL_END
+

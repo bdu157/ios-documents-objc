@@ -7,8 +7,14 @@
 //
 
 #import "DetailViewController.h"
+#import "DocumentController.h"
+#import "DWPDocument.h"
 
 @interface DetailViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+@property (weak, nonatomic) IBOutlet UITextView *contentTextView;
 
 @end
 
@@ -16,17 +22,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self updateViews];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)save:(id)sender
+{
+    BOOL isNewDocument = (self.document == nil);
+    
+    if (isNewDocument) {
+        DWPDocument *document = [[DWPDocument alloc] initWithTitle:self.titleTextField.text content:self.contentTextView.text];
+        [self.documentController addDocument:document];
+    } else {
+        self.document.title = self.titleTextField.text;
+        self.document.content = self.contentTextView.text;
+    }
+    [self.navigationController popViewControllerAnimated:YES];
 }
-*/
+
+#pragma mark - Private Methods
+-(void)updateViews
+{
+    if (self.document) {
+        self.title = @"Update Document";
+        self.titleTextField.text = self.document.title;
+        self.contentTextView.text = self.document.content;
+    } else {
+        self.title = @"Create Document";
+    }
+}
+
+-(void)setDocument:(DWPDocument *)document
+{
+    if (_document != document) {
+        _document = document;
+        [self updateViews];
+    }
+}
 
 @end
