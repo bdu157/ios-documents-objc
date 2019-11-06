@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DocumentsTableViewController.h
 //  DocumentsObj-C
 //
 //  Created by Dongwoo Pae on 11/6/19.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface DocumentsTableViewController : UITableViewController
 
 
 @end

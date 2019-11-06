@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  DocumentsTableViewController.m
 //  DocumentsObj-C
 //
 //  Created by Dongwoo Pae on 11/6/19.
 //  Copyright © 2019 Dongwoo Pae. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DocumentsTableViewController.h"
 
-@interface ViewController ()
+@interface DocumentsTableViewController ()
 
 @end
 
-@implementation ViewController
+@implementation DocumentsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
