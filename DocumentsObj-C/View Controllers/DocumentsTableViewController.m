@@ -45,7 +45,7 @@
     
     DWPDocument *document = [self.documentController.documents objectAtIndex:indexPath.row];
     cell.textLabel.text = document.title;
-    cell.detailTextLabel.text = document.content;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%d%@", document.content.dwp_wordCount, @" words"];
     return cell;
 }
 
