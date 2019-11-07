@@ -14,7 +14,7 @@
 
 @interface DocumentsTableViewController ()
 
-@property (nonatomic, readonly) DocumentController *documentController;
+@property (nonatomic) DocumentController *documentController;
 
 @end
 
@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _documentController = [[DocumentController alloc] init];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -77,13 +78,13 @@
 
 #pragma mark - Private Properties
 
-@synthesize documentController = _documentController;
--(DocumentController *)documentController
-{
-    if (!_documentController) {
-        _documentController = [[DocumentController alloc] init];
-    }
-    return _documentController;
-}
+//@synthesize documentController = _documentController;
+//-(DocumentController *)documentController
+//{
+//    if (!_documentController) {
+//        _documentController = [[DocumentController alloc] init];
+//    }
+//    return _documentController;
+//}
 
 @end
